@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoleKicks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="c:\Users\snory\Downloads\Untitled design.png" alt="SoleKicks Logo">
+        </div>
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="index.html">Kids Home Page</a></li>
+                <li><a href="infants.html">Infants</a></li>
+                <li><a href="youth.html">Youth</a></li>
+                <li><a href="preschool.html">Preschool</a></li>
+                <li><a href="new-arrivals.html">New Arrivals</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            <section class="promo-banner">
+                <h1>10% OFF TILL DECEMBER 25th</h1>
+            </section>
+            <section class="products">
+                <h2>Kid's Shoes</h2>
+                <div class="product-grid" id="product-grid">
+                    <div class="product" data-price="235">
+                        <img src="c:\Users\snory\OneDrive\Pictures\Screenshots\Screenshot 2024-12-04 051621.png" alt="Jordan 1 Low UNC">
+                        <p>Jordan 1 Low "UNC"</p>
+                        <p>$235.00</p>
+                    </div>
+                    <div class="product" data-price="675">
+                        <img src="c:\Users\snory\OneDrive\Pictures\Screenshots\Screenshot 2024-12-04 051529.png" alt="PSG x Jordan 4 Retro">
+                        <p>PSG x Jordan 4 Retro</p>
+                        <p>$675.00</p>
+                    </div>
+                    <div class="product" data-price="205">
+                        <img src="c:\Users\snory\OneDrive\Pictures\Screenshots\Screenshot 2024-12-04 052319.png" alt="Jordan 3 Retro White Cement">
+                        <p>Jordan 3 Retro "White Cement"</p>
+                        <p>$205.00</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <aside class="filter-bar">
+            <h3>Filter</h3>
+            <ul>
+                <li><label><input type="checkbox" class="filter" data-filter="price-low"> Price: Low to High</label></li>
+                <li><label><input type="checkbox" class="filter" data-filter="price-high"> Price: High to Low</label></li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <div class="footer-logo">
+            <img src="c:\Users\snory\Downloads\Untitled design.png" alt="SoleKicks Footer Logo">
+        </div>
+        <p>© 2024 SoleKicks. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
