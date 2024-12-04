@@ -12,6 +12,7 @@ Project Solekicks is a simple and responsive webpage inspired by a shoe e-commer
 - **Contact Information**:
   - Email, phone, address, and working hours.
   - Links to social media (Instagram, Twitter, TikTok).
+  - Use consistent and attractive icons for your contact info and social links to align with our brand.
 - **Contact Form**:
   - Fields for name, email, and message with a "Send" button.
 - **Footer**:
