@@ -1,0 +1,42 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const filters = document.querySelectorAll(".filter");
+    const products = document.querySelectorAll(".product");
+    const productGrid = document.getElementById("product-grid");
+
+    filters.forEach(filter => {
+        filter.addEventListener("change", () => {
+            const activeFilters = Array.from(filters)
+                .filter(input => input.checked)
+                .map(input => input.getAttribute("data-filter"));
+
+            products.forEach(product => product.style.display = "block");
+
+            if (activeFilters.includes("price-low")) {
+                sortProductsByPrice("low");
+            }
+            if (activeFilters.includes("price-high")) {
+                sortProductsByPrice("high");
+            }
+  
+        });
+    });
+
+    function sortProductsByPrice(order) {
+        const sortedProducts = Array.from(products).sort((a, b) => {
+            const priceA = parseInt(a.getAttribute("data-price"));
+            const priceB = parseInt(b.getAttribute("data-price"));
+            return order === "low" ? priceA - priceB : priceB - priceA;
+        });
+
+        productGrid.innerHTML = "";
+        sortedProducts.forEach(product => productGrid.appendChild(product));
+    }
+
+    function filterByAttribute(attribute, value) {
+        products.forEach(product => {
+            if (product.getAttribute(`data-${attribute}`) !== value) {
+                product.style.display = "none";
+            }
+        });
+    }
+});
